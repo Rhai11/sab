@@ -1,35 +1,184 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>John L!</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="banner">
-            <video autoplay loop muted plays-inline>
-                <source src="video1.mp4" type="video/mp4">
-            </video>
-            <div class="navbar">
-                <img class="logo" src="logo.png">
-                <ul>
-                    <li><a href="http://facebook.com/johnathan.lizcano?mibextid=ZbWKwL">Facebook</a></li>
-                    <li><a href="https://www.tiktok.com/@simplerider512?_t=ZS-8zG1WmwYCmq&_r=1">Tiktok</a></li>
-                    <li><a href="#">About me</a></li>
-                    
-                </ul>
-            </div>
-            <div class="content">
-                <h1>Hello everyone, I am John L!</h1>
-                <div>
-                    <h2>
-                        
-                        
-                        I am here to trade, to giveaway, to make friends!</h2>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steal a Brainrot - Buy Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1b1d1f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .item-details {
+            flex: 1;
+        }
+        .item h3 {
+            margin: 0 0 10px 0;
+        }
+        .item p {
+            margin: 0 0 10px 0;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #28a745;
+            font-weight: bold;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .social-section {
+            background-color: #1b1d1f;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .social-section h3 {
+            margin: 0 0 10px 0;
+        }
+        .social-section a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Steal a Brainrot Shop - Your One-Stop Shop for Cool Brainrot</h1>
+    </header>
+    <div class="container">
+        <h2>Featured Brainrot</h2>
+        
+        <!-- Item 1 -->
+        <div class="item">
+            <img src="Images/a1.jpg" alt="Wireless Earbuds">
+            <div class="item-details">
+                <h3>Kensley and Dildo</h3>
+                <p>High-quality with dildo massage.</p>
+                <p class="price">$49.99</p>
+                <button onclick="checkout('Wireless Earbuds')">Buy Now</button>
             </div>
         </div>
-    </body>
+        
+        <!-- Item 2 -->
+        <div class="item">
+            <img src="Images/1000133407.jpg" alt="Smart Watch">
+            <div class="item-details">
+                <h3>Chipso and Kensley (Candy)</h3>
+                <p>Candy brainrot.</p>
+                <p class="price">$199.99</p>
+                <button onclick="checkout('Smart Watch')">Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="item">
+            <img src="Images/1000133410.jpg" alt="Portable Charger">
+            <div class="item-details">
+                <h3>Chipso and Kensley (Radioactive)</h3>
+                <p>Radioactive Brainrot.</p>
+                <p class="price">$29.99</p>
+                <button onclick="checkout('Portable Charger')">Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="item">
+            <img src="Images/1000133411.jpg" alt="Bluetooth Speaker">
+            <div class="item-details">
+                <h3>Chipso and Kensley (Rainbow)</h3>
+                <p>Rainbow Brainrot.</p>
+                <p class="price">$39.99</p>
+                <button onclick="checkout('Bluetooth Speaker')">Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="item">
+            <img src="Images/1000133412.jpg" alt="VR Headset">
+            <div class="item-details">
+                <h3>Chipso and Kensley (Gold)</h3>
+                <p>Gold Brainrot.</p>
+                <p class="price">$299.99</p>
+                <button onclick="checkout('VR Headset')">Buy Now</button>
+            </div>
+        </div>
 
+        <!-- Item 6 -->
+        <div class="item">
+            <img src="Images/1000133413.jpg" alt="Bluetooth Speaker">
+            <div class="item-details">
+                <h3>Chipso and Kensley (Yin Yang)</h3>
+                <p>Yin Yang Brainrot.</p>
+                <p class="price">$39.99</p>
+                <button onclick="checkout('Bluetooth Speaker')">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="social-section">
+            <h3>Follow Us for More Brainrot!</h3>
+            <p>Stay updated with the latest drops and exclusive content.</p>
+            <a href="https://www.facebook.com/johnkensley.bonsukan" target="_blank">Visit My Facebook</a>
+        </div>
+    </div>
+
+    <script>
+        function checkout(itemName) {
+            // Mock checkout: Simulate processing
+            alert(`Processing purchase for ${itemName}... (This is a demo - no real payment!)`);
+            
+            // Simulate success after a short delay
+            setTimeout(() => {
+                alert(`Purchase successful! Thank you for buying ${itemName}.`);
+                // Redirect to success page
+                window.location.href = 'success.html';
+            }, 1000); // 1 second delay for demo
+        }
+    </script>
+</body>
 </html>
