@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #28a745;
+        }
+        #countdown {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Successful!</h1>
+    <p>Thank you for your purchase. Your gadget is on its way! (Demo mode - no real transaction occurred.)</p>
+    <p id="countdown">Redirecting back to store in 5 seconds...</p>
+    <a href="index.html" style="color: #007bff;">Back to Store Now</a>
+
+    <script>
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = `Redirecting back to store in ${countdown} seconds...`;
+            if (countdown <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html'; 
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
